@@ -1,5 +1,5 @@
 # RRSMP
-This repository releases a comprehensive dataset for long-term stock movement prediction from Chinese research reports and historical stock prices. Please cite the following paper [bib] if you use this dataset,
+This repository releases a comprehensive dataset for long-term stock movement prediction from Chinese research reports and historical stock prices. Please cite the following paper [bib] if you use this dataset.
 
 You might also be interested in our code for stock movement prediction.
 
@@ -12,14 +12,20 @@ The research reports between 07/23/2009 and 03/02/2022 are downloaded from the E
 This dataset comprises two main components,
 
 (1) ./reports: textual data from reasearch reports
-(2) ./price: price data from Yahoo Finance
-Each component contains their raw data and preprocessed data organized by stocks,
-#
-##
-./tweet/raw
-./tweet/preprocessed
+(2) ./price: price data from Finance API
+
+Each component contains their raw data and preprocessed data organized by year,
+
+./tweet/Raw
+./tweet/Pre
+./tweet/Post
+
 and
 
-./price/raw
-./price/preprocessed
-Data Format
+./price/Raw
+
+# Data Format
+(1) Raw Research Report Data
+
+
+(2)
