@@ -26,7 +26,7 @@ Each component contains their raw data, preprocessed data, and finished data org
 
 and
 
-* **./price/Raw**
+* **./price**
 
 ## Data Format
 
