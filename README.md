@@ -1,8 +1,8 @@
 # RRSMP
-This repository releases a comprehensive dataset for long-term stock movement prediction from Chinese research reports and historical stock prices. Please cite the following paper [bib] if you use this dataset.
+This repository releases a comprehensive dataset for long-term stock movement prediction from Chinese research reports and historical stock prices. We will open source all data and code in the near future. Please cite the following paper [bib] if you use this dataset.
 
-
-> Stock movement prediction is a challenging problem: the market is highly *stochastic*, and we make *long-term* predictions from *chaotic* data. We treat these three complexities and present a novel long-term stock movement prediction approach based on research reports. In detail, a new Research Report dataset for Stock Movement Prediction (RRSMP) is proposed. RRSMP is one of the few datasets for long-term stock movement prediction, which is mainly composed of long-form, formal, and professional research reports and labeled data. We demonstrate the state-of-the-art performance of our proposed model on the new stock movement prediction dataset which we collected.
+[^_^]:
+> Stock movement prediction is a challenging problem: the market is highly *stochastic*, and we make *long-term* predictions from *chaotic* data. We treat these three complexities and present a novel long-term stock movement prediction approach based on research reports. In detail, a new Research Report dataset for Stock Movement Prediction (RRSMP) is proposed. RRSMP is one of the few datasets for long-term stock movement prediction, which is mainly composed of long-form, formal, and professional research reports. We demonstrate the state-of-the-art performance of our proposed model on RRSMP.
 
 You might also be interested in our code for stock movement prediction.
 
@@ -32,22 +32,27 @@ and
 
 ### Raw Research Report Data
 Format: PDF
+
 Keys: see more in the [Eastmoney.com](https://data.eastmoney.com/)
 
 ### Preprocessed Research Report Data
 Format: XLS
+
 Keys: 'Title', 'Links', 'Org.', 'Author', 'Rate', 'Date', 'Text'
 
 ### Finished Research Report Data
-Format: CSV 
+Format: CSV
+
 Keys: 'id', 'text', 'category', 'rating'
 
 ### Modules Research Report Data
 Format: CSV 
+
 Keys: 'id', 'text', 'category', 'rating'
 
 ### Raw Price Data
 Format: CSV 
+
 Entries: date, open price, high price, low price, close price, adjust close price, volume  
 
 
