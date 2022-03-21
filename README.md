@@ -30,20 +30,19 @@ and
 
 ## Data Format
 
-##Raw Research Report Data
+### Raw Research Report Data
 Format: PDF
-
 Keys: see more in the [Eastmoney.com](https://data.eastmoney.com/)
 
-##Preprocessed Research Report Data
+### Preprocessed Research Report Data
 Format: XLS
 Keys: 'Title', 'Links', 'Org.', 'Author', 'Rate', 'Date', 'Text'
 
-##Finished Research Report Data
+### Finished Research Report Data
 Format: CSV 
 Keys: 'id', 'text', 'category', 'rating'
 
-###Modules Research Report Data
+### Modules Research Report Data
 Format: CSV 
 Keys: 'id', 'text', 'category', 'rating'
 
