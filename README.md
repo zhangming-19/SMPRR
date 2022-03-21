@@ -35,24 +35,20 @@ Format: PDF
 
 Keys: see more in the [Eastmoney.com](https://data.eastmoney.com/)
 
-###Preprocessed Research Report Data
+##Preprocessed Research Report Data
 Format: XLS
-
 Keys: 'Title', 'Links', 'Org.', 'Author', 'Rate', 'Date', 'Text'
 
 ###Finished Research Report Data
 Format: CSV 
-
 Keys: 'id', 'text', 'category', 'rating'
 
 ###Modules Research Report Data
 Format: CSV 
-
 Keys: 'id', 'text', 'category', 'rating'
 
 ### Raw Price Data
 Format: CSV 
-
 Entries: date, open price, high price, low price, close price, adjust close price, volume  
 
 
