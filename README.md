@@ -6,7 +6,7 @@ This repository releases a comprehensive dataset for long-term stock movement pr
 
 You might also be interested in our code for stock movement prediction.
 
-Should you have any query please contact me at zhangming@hccl.ioa.ac.cn.
+Should you have any query please contact me at [zhangming@hccl.ioa.ac.cn](mailto:zhangming@hccl.ioa.ac.cn).
 
 ## Dataset Overview
 The research reports between 07/23/2009 and 03/02/2022 are downloaded from the Eastmoney.com, which are publicly available on the web. Correspondingly, the historical prices of related stocks are obtained from the public finance [API](https://tushare.pro/) for the last ten years.
@@ -32,22 +32,27 @@ and
 
 ###Raw Research Report Data
 Format: PDF
+
 Keys: see more in the [Eastmoney.com](https://data.eastmoney.com/)
 
 ###Preprocessed Research Report Data
 Format: XLS
+
 Keys: 'Title', 'Links', 'Org.', 'Author', 'Rate', 'Date', 'Text'
 
 ###Finished Research Report Data
-Format: CSV  
+Format: CSV 
+
 Keys: 'id', 'text', 'category', 'rating'
 
 ###Modules Research Report Data
-Format: CSV  
+Format: CSV 
+
 Keys: 'id', 'text', 'category', 'rating'
 
 ### Raw Price Data
-Format: CSV  
+Format: CSV 
+
 Entries: date, open price, high price, low price, close price, adjust close price, volume  
 
 
