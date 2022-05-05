@@ -53,7 +53,7 @@ Keys: 'id', 'text', 'category', 'rating'
 ### Raw Price Data
 Format: CSV 
 
-Entries: date, open price, high price, low price, close price, adjust close price, volume  
+Entries: 'date', 'open price', 'high price', 'low price', 'close price', 'adjust close price', 'volume'  
 
 
 
