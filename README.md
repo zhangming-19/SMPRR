@@ -5,6 +5,7 @@ This repository releases a comprehensive dataset for long-term stock movement pr
 > Stock movement prediction is a challenging problem: the market is highly *stochastic*, and we make *long-term* predictions from *chaotic* data. We treat these three complexities and present a novel long-term stock movement prediction approach based on research reports. In detail, a new Research Report dataset for Stock Movement Prediction (SMPRR) is proposed. SMPRR is one of the few datasets for long-term stock movement prediction, which is mainly composed of long-form, formal, and professional research reports. We demonstrate the state-of-the-art performance of our proposed model on SMPRR.
 
 You might also be interested in our code for stock movement prediction. We have deposited the code in the Code Ocean platform. The accepted code capsules can be found through XXX. The DOI of the code is 10.24433/CO.2855516.v1
+
 Should you have any query please contact me at [zhangming@hccl.ioa.ac.cn](mailto:zhangming@hccl.ioa.ac.cn).
 
 ## Dataset Overview
@@ -53,6 +54,79 @@ Keys: 'id', 'text', 'category', 'rating'
 Format: CSV 
 
 Keys: 'Date', 'Open', 'Close', 'High', 'Low', 'Volume', 'Amount', 'Amplitude', 'Quote_change', 'Mount_change' and 'Turnover_rate'
+
+## Codes
+###################################
+# Prepare data #
+###################################
+# You can get data here (https://github.com/zhangming-19/SMPRR). Put them under the dir data/*.
+# Due to storage space constraints, we only use part of SMPRR dataset (2019) to validate our code.
+bash ./Step01_process.sh
+
+###################################
+# Reproduce Results #
+###################################
+# You can follow the following steps to reproduce the best results in our paper.
+# Download checkpoints #
+# Download checkpoints (Ours_FinBert_360_Ex2019_part0X_GRU_X) here (https://github.com/zhangming-19/SMPRR). Put the checkpoints under the dir data/*.
+
+# Inference #
+# Since there is only one '/data' folder, you need to infer part01 to part04 sequentially.
+# In detail, you need to configure inference data in Step01_process.sh, and then infer.
+
+# echo inference_part01
+# bash ./Step05_eval_dev_part01.sh
+
+# echo inference_part02
+# bash ./Step05_eval_dev_part02.sh
+
+# echo inference_part03
+# bash ./Step05_eval_dev_part03.sh
+
+echo inference_part04
+bash ./Step05_eval_dev_part04.sh
+
+# Combine #
+bash ./Step06_combine_dev_FinBert.sh
+
+# Analysis #
+bash ./Step07_analysis_dev_FinBert.sh
+
+# MFF-FinBERT #
+bash ./Step08_MFF_result.sh
+
+
+###################################
+# From Scratch #
+###################################
+# Need to use CUDA for training, about 2~3 hours on 4 P100.
+# Download FinBERT checkpoint
+# Download finbart.base checkpoint (https://github.com/zhangming-19/SMPRR). Put it under the dir ./chinese_finbert_base_pytorch/*.
+
+# Train and infer #
+# Since there is only one '/data' folder, you need to infer part01 to part04 sequentially.
+# In detail, you need to configure inference data in Step01_process.sh, and then infer.
+
+# echo train_part01
+# bash ./Step02_run_FinBert_part01.sh
+
+# echo train_part02
+# bash ./Step02_run_FinBert_part02.sh
+
+# echo train_part03
+# bash ./Step02_run_FinBert_part03.sh
+
+# echo train_part04
+# bash ./Step02_run_FinBert_part04.sh
+
+# Combine #
+# bash ./Step03_combine_FinBert.sh
+
+# Analysis #
+# bash ./Step04_analysis_result_FinBert.sh
+
+# MFF-FinBERT #
+# bash ./Step08_MFF_result.sh
 
 ## Citation
 XXX
