@@ -57,76 +57,72 @@ Keys: 'Date', 'Open', 'Close', 'High', 'Low', 'Volume', 'Amount', 'Amplitude', '
 
 ## Codes
 ###################################
-# Prepare data #
+ Prepare data 
+ You can get data here (https://github.com/zhangming-19/SMPRR). Put them under the dir data/*.
 ###################################
-# You can get data here (https://github.com/zhangming-19/SMPRR). Put them under the dir data/*.
-# Due to storage space constraints, we only use part of SMPRR dataset (2019) to validate our code.
 bash ./Step01_process.sh
 
 ###################################
-# Reproduce Results #
+ Reproduce Results 
+ You can follow the following steps to reproduce the best results in our paper.
 ###################################
-# You can follow the following steps to reproduce the best results in our paper.
-# Download checkpoints #
-# Download checkpoints (Ours_FinBert_360_Ex2019_part0X_GRU_X) here (https://github.com/zhangming-19/SMPRR). Put the checkpoints under the dir data/*.
+### Download checkpoints 
+ Download checkpoints (Ours_FinBert_360_Ex2019_part0X_GRU_X) here (https://github.com/zhangming-19/SMPRR). Put the checkpoints under the dir data/*.
 
-# Inference #
-# Since there is only one '/data' folder, you need to infer part01 to part04 sequentially.
-# In detail, you need to configure inference data in Step01_process.sh, and then infer.
+### Inference 
+ Since there is only one '/data' folder, you need to infer part01 to part04 sequentially. In detail, you need to configure inference data in Step01_process.sh, and then infer.
 
-# echo inference_part01
-# bash ./Step05_eval_dev_part01.sh
+echo inference_part01
+bash ./Step05_eval_dev_part01.sh
 
-# echo inference_part02
-# bash ./Step05_eval_dev_part02.sh
+echo inference_part02
+bash ./Step05_eval_dev_part02.sh
 
-# echo inference_part03
-# bash ./Step05_eval_dev_part03.sh
+echo inference_part03
+bash ./Step05_eval_dev_part03.sh
 
 echo inference_part04
 bash ./Step05_eval_dev_part04.sh
 
-# Combine #
+### Combine 
 bash ./Step06_combine_dev_FinBert.sh
 
-# Analysis #
+### Analysis 
 bash ./Step07_analysis_dev_FinBert.sh
 
-# MFF-FinBERT #
+# MFF-FinBERT 
 bash ./Step08_MFF_result.sh
 
 
 ###################################
-# From Scratch #
+ From Scratch 
 ###################################
-# Need to use CUDA for training, about 2~3 hours on 4 P100.
-# Download FinBERT checkpoint
-# Download finbart.base checkpoint (https://github.com/zhangming-19/SMPRR). Put it under the dir ./chinese_finbert_base_pytorch/*.
+### Download FinBERT checkpoint
+ Download finbart.base checkpoint (https://github.com/zhangming-19/SMPRR). Put it under the dir ./chinese_finbert_base_pytorch/*.
 
-# Train and infer #
-# Since there is only one '/data' folder, you need to infer part01 to part04 sequentially.
-# In detail, you need to configure inference data in Step01_process.sh, and then infer.
+### Train and infer 
+ Since there is only one '/data' folder, you need to infer part01 to part04 sequentially. In detail, you need to configure inference data in Step01_process.sh, and then infer.
 
-# echo train_part01
-# bash ./Step02_run_FinBert_part01.sh
+ echo train_part01
+ bash ./Step02_run_FinBert_part01.sh
 
-# echo train_part02
-# bash ./Step02_run_FinBert_part02.sh
+ echo train_part02
+ bash ./Step02_run_FinBert_part02.sh
 
-# echo train_part03
-# bash ./Step02_run_FinBert_part03.sh
+ echo train_part03
+ bash ./Step02_run_FinBert_part03.sh
 
-# echo train_part04
-# bash ./Step02_run_FinBert_part04.sh
+ echo train_part04
+ bash ./Step02_run_FinBert_part04.sh
 
-# Combine #
-# bash ./Step03_combine_FinBert.sh
+### Combine 
+ bash ./Step03_combine_FinBert.sh
 
-# Analysis #
-# bash ./Step04_analysis_result_FinBert.sh
+### Analysis 
+ bash ./Step04_analysis_result_FinBert.sh
 
-# MFF-FinBERT #
-# bash ./Step08_MFF_result.sh
+### MFF-FinBERT 
+ bash ./Step08_MFF_result.sh
 
 ## Citation
 XXX
