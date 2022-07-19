@@ -4,8 +4,7 @@ This repository releases a comprehensive dataset for long-term stock movement pr
 
 > Stock movement prediction is a challenging problem: the market is highly *stochastic*, and we make *long-term* predictions from *chaotic* data. We treat these three complexities and present a novel long-term stock movement prediction approach based on research reports. In detail, a new Research Report dataset for Stock Movement Prediction (SMPRR) is proposed. SMPRR is one of the few datasets for long-term stock movement prediction, which is mainly composed of long-form, formal, and professional research reports. We demonstrate the state-of-the-art performance of our proposed model on SMPRR.
 
-You might also be interested in our code for stock movement prediction.
-
+You might also be interested in our code for stock movement prediction. We have deposited the code in the Code Ocean platform. The accepted code capsules can be found through XXX. The DOI of the code is 10.24433/CO.2855516.v1
 Should you have any query please contact me at [zhangming@hccl.ioa.ac.cn](mailto:zhangming@hccl.ioa.ac.cn).
 
 ## Dataset Overview
@@ -55,9 +54,8 @@ Format: CSV
 
 Keys: 'Date', 'Open', 'Close', 'High', 'Low', 'Volume', 'Amount', 'Amplitude', 'Quote_change', 'Mount_change' and 'Turnover_rate'
 
-
-
-
+## Citation
+XXX
 
 
 
