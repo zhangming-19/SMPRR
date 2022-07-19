@@ -75,8 +75,7 @@ conda create -n bart python=3.7.
 
  ### Prepare data 
  You can get data here (https://github.com/zhangming-19/SMPRR). Put them under the dir data/*.
-
-bash ./Step01_process.sh
+* bash ./Step01_process.sh
 
 ################################
 
@@ -92,22 +91,19 @@ You can follow the following steps to reproduce the best results in our paper.
 ### Inference 
  Since there is only one '/data' folder, you need to infer part01 to part04 sequentially. In detail, you need to configure inference data in Step01_process.sh, and then infer.
 
-bash ./Step05_eval_dev_part01.sh
-
-bash ./Step05_eval_dev_part02.sh
-
-bash ./Step05_eval_dev_part03.sh
-
-bash ./Step05_eval_dev_part04.sh
+* bash ./Step05_eval_dev_part01.sh
+* bash ./Step05_eval_dev_part02.sh
+* bash ./Step05_eval_dev_part03.sh
+* bash ./Step05_eval_dev_part04.sh
 
 ### Combine 
-bash ./Step06_combine_dev_FinBert.sh
+* bash ./Step06_combine_dev_FinBert.sh
 
 ### Analysis 
-bash ./Step07_analysis_dev_FinBert.sh
+* bash ./Step07_analysis_dev_FinBert.sh
 
 ### MFF-FinBERT 
-bash ./Step08_MFF_result.sh
+* bash ./Step08_MFF_result.sh
 
 ################################
 
@@ -121,22 +117,19 @@ bash ./Step08_MFF_result.sh
 ### Train and infer 
  Since there is only one '/data' folder, you need to infer part01 to part04 sequentially. In detail, you need to configure inference data in Step01_process.sh, and then infer.
 
- bash ./Step02_run_FinBert_part01.sh
-
- bash ./Step02_run_FinBert_part02.sh
-
- bash ./Step02_run_FinBert_part03.sh
-
- bash ./Step02_run_FinBert_part04.sh
+* bash ./Step02_run_FinBert_part01.sh
+* bash ./Step02_run_FinBert_part02.sh
+* bash ./Step02_run_FinBert_part03.sh
+* bash ./Step02_run_FinBert_part04.sh
 
 ### Combine 
- bash ./Step03_combine_FinBert.sh
+* bash ./Step03_combine_FinBert.sh
 
 ### Analysis 
- bash ./Step04_analysis_result_FinBert.sh
+* bash ./Step04_analysis_result_FinBert.sh
 
 ### MFF-FinBERT 
- bash ./Step08_MFF_result.sh
+* bash ./Step08_MFF_result.sh
 
 ## Citation
 XXX
