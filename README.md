@@ -56,6 +56,23 @@ Format: CSV
 Keys: 'Date', 'Open', 'Close', 'High', 'Low', 'Volume', 'Amount', 'Amplitude', 'Quote_change', 'Mount_change' and 'Turnover_rate'
 
 ## Codes
+### Requirements
+We use Conda python 3.7 and strongly recommend that you create a new environment.
+
+conda create -n bart python=3.7.
+
+### Environment
+#### Python 3.7
+#### PyTorch 1.4.0+cu100
+#### HuggingFace Transformers 4.16.2
+#### boto3 1.24.32
+#### numpy 1.21.4
+#### pandas 1.1.5
+#### regex 2022.7.9
+#### sentencepiece 0.1.96
+#### sklearn latest
+
+
  ### Prepare data 
  You can get data here (https://github.com/zhangming-19/SMPRR). Put them under the dir data/*.
 
