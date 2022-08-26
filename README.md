@@ -131,18 +131,17 @@ You can follow the following steps to reproduce the best results in our paper.
 * bash ./Step08_MFF_result.sh
 
 ## Citation
-@article{ZHANG2022118312,
-
-title = {Predicting long-term stock movements with fused textual features of Chinese research reports},
-journal = {Expert Systems with Applications},
-volume = {210},
-pages = {118312},
-year = {2022},
-issn = {0957-4174},
-doi = {https://doi.org/10.1016/j.eswa.2022.118312},
-url = {https://www.sciencedirect.com/science/article/pii/S0957417422014427},
-author = {Ming Zhang and Jiahao Yang and Meilin Wan and Xuejun Zhang and Jun Zhou},
-keywords = {Long-term stock prediction, Research report, Financial text mining, Textual feature, Pre-trained language model},
+@article{ZHANG2022118312,  
+title = {Predicting long-term stock movements with fused textual features of Chinese research reports},  
+journal = {Expert Systems with Applications},  
+volume = {210},  
+pages = {118312},  
+year = {2022},  
+issn = {0957-4174},  
+doi = {https://doi.org/10.1016/j.eswa.2022.118312},  
+url = {https://www.sciencedirect.com/science/article/pii/S0957417422014427},  
+author = {Ming Zhang and Jiahao Yang and Meilin Wan and Xuejun Zhang and Jun Zhou},  
+keywords = {Long-term stock prediction, Research report, Financial text mining, Textual feature, Pre-trained language model},  
 abstract = {By shaping investors’ perceptions and assessments of the stock, research reports have significant impacts on the stock market. Due to the limitations of text mining technology, it is difficult for researchers to effectively utilize long research reports, and most studies mainly focus on investor sentiment. However, due to the lack of appropriate open-domain toolkits, the annotations of sentiment often require expensive manual labeling. In addition, most existing studies have shown the success of using textual data as a supplement to historical price data in short-term forecasting, but not in long-term forecasting. To cover this gap and solve the problem of difficult annotations, we introduce a novel knowledge-driven approach for long-term stock movement prediction based on Chinese research reports. In detail, a new long-term Stock Movement Prediction dataset composed of Research Reports is proposed, namely SMPRR. It is mainly composed of long, formal, and professional research reports and historical prices. Furthermore, we propose the Multi-module Feature Fusion method based on the pre-trained language model FinBERT (MFF-FinBERT), which can effectively fuse textual features from research reports. The experiment results show that the proposed model has achieved better performance than existing methods in the forecasting of one-year stock movements, and the accuracy reaches 79.2%. The results also indicate that the basic information of stocks plays an important role in long-term forecasting, which is in line with the theory of value investing.}
 }
 
